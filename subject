@@ -1,0 +1,39 @@
+#include<stdio.h>
+int total(int a,int b,int c);
+struct student
+{
+    
+    char name[30];
+    int rollno;
+    int sub1;
+    int sub2;
+    int sub3;
+    
+};
+int main ()
+{
+    struct student  s1;
+    
+   
+    
+    printf("ENTER YOUR NAME :");
+    scanf("%s",&s1.name);
+    printf("ENTER YOUR ROLLNO :");
+    scanf("%d",&s1.rollno);
+     printf("ENTER SUBJECT 1 :");
+    scanf("%d",&s1.sub1);
+    printf("ENTER SUBJECT 2 :");
+    scanf("%d",&s1.sub2);
+    printf("ENTER SUBJECT 3 :");
+    scanf("%d",&s1.sub3);
+
+    total(s1.sub1,s1.sub2,s1.sub3);
+
+    return 0;
+}
+int total(int a,int b,int c)
+{
+    int sum;
+    sum = a+b+c;
+    printf("TOTAL MARKS = %d",sum);
+}
